@@ -1,0 +1,16 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django app 1</title>
+</head>
+<body>
+    {% load render_bundle from webpack_loader %}
+    <div id="app">
+       <app> </app>
+    </div>
+    <script type="text/javascript" src="{% static 'djapp1/js/bundle.js' %}" ></script>
+</body>
+</html>
